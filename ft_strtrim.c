@@ -6,7 +6,7 @@
 /*   By: takira <takira@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 10:39:48 by takira            #+#    #+#             */
-/*   Updated: 2022/11/07 14:45:00 by takira           ###   ########.fr       */
+/*   Updated: 2022/11/12 10:09:59 by takira           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static size_t	get_head_and_size(const char *s, const char *set, size_t *head)
 	size_t	size;
 
 	*head = 0;
-	while (ft_strchr(set, s[*head]) != NULL)
+	while (s[*head] && ft_strchr(set, s[*head]) != NULL)
 		*head += 1;
 	tail = ft_strlen(s) - 1;
 	while (ft_strchr(set, s[tail]) != NULL)

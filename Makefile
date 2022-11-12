@@ -6,7 +6,7 @@
 #    By: takira </var/mail/takira>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/20 19:18:14 by takira            #+#    #+#              #
-#    Updated: 2022/10/20 19:18:17 by takira           ###   ########.fr        #
+#    Updated: 2022/11/12 10:04:49 by takira           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -67,7 +67,6 @@ BONUSOBJS	= $(BONUSSRCS:.c=.o)
 
 ifdef WITH_BONUS
 	SRCS += $(BONUSSRCS)
-	OBJS += $(BONUSOBJS)
 endif
 
 $(NAME):	$(OBJS)
