@@ -3,14 +3,14 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: takira </var/mail/takira>                  +#+  +:+       +#+         #
+#    By: takira <takira@student.42tokyo.jp>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/20 19:18:14 by takira            #+#    #+#              #
-#    Updated: 2022/11/12 10:04:49 by takira           ###   ########.fr        #
+#    Updated: 2022/11/13 18:19:48 by takira           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CC			= gcc
+CC			= cc
 
 CFLAGS		= -Wall -Wextra -Werror
 

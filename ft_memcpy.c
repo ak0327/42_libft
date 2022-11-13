@@ -6,7 +6,7 @@
 /*   By: takira <takira@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 10:41:06 by takira            #+#    #+#             */
-/*   Updated: 2022/11/12 10:06:47 by takira           ###   ########.fr       */
+/*   Updated: 2022/11/13 18:18:42 by takira           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	size_t	i;
 
 	if (dst == src)
-		return (0);
+		return (dst);
 	i = 0;
 	while (i < n)
 	{
