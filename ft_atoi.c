@@ -14,8 +14,7 @@
 
 static int	my_isspace(char c)
 {
-	return (c == ' ' || c == '\t' || c == '\n' || \
-	c == '\v' || c == '\f' || c == '\r');
+	return (ft_strchr("\t\n\v\f\r ", c) != NULL);
 }
 
 static bool	is_under_long(long long before_10x_val, long long add_val, int sign)
