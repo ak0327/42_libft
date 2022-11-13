@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static void	recursion_put_nbr(long long num, int fd)
+static void	recursion_put_nbr(unsigned int num, int fd)
 {
 	if (num == 0)
 		return ;
@@ -22,7 +22,7 @@ static void	recursion_put_nbr(long long num, int fd)
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	long long	num;
+	unsigned int	num;
 
 	if (n >= 0)
 		num = n;
@@ -31,5 +31,6 @@ void	ft_putnbr_fd(int n, int fd)
 		num = -n;
 		ft_putchar_fd('-', fd);
 	}
-	recursion_put_nbr(num, fd);
+	recursion_put_nbr(num / 10, fd);
+	ft_putchar_fd(num % 10 + '0', fd);
 }
