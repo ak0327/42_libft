@@ -25,11 +25,10 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t	src_len;
 	size_t	cat_len;
 
-	if (dst == NULL)
-		dst_len = 0;
-	else
-		dst_len = ft_strlen(dst);
 	src_len = ft_strlen(src);
+	if (dstsize == 0)
+		return (src_len);
+	dst_len = ft_strlen(dst);
 	if (dstsize <= dst_len)
 		return (src_len + dstsize);
 	cat_len = minsize(dstsize - dst_len - 1, src_len);
