@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-static void	recursion_put_nbr(unsigned int num, int fd)
+static void	recursion_put_nbr(int num, int fd)
 {
 	if (num == 0)
 		return ;

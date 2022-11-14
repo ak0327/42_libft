@@ -15,23 +15,16 @@
 static size_t	get_head_and_size(const char *s, const char *set, size_t *head)
 {
 	size_t	tail;
-	size_t	size;
 
 	*head = 0;
 	while (s[*head] && ft_strchr(set, s[*head]) != NULL)
 		*head += 1;
 	tail = ft_strlen(s) - 1;
-	while (ft_strchr(set, s[tail]) != NULL)
-	{
-		if (tail == 0)
-			break ;
+	while (tail > 0 && ft_strchr(set, s[tail]) != NULL)
 		tail -= 1;
-	}
 	if (*head <= tail)
-		size = tail - *head + 1;
-	else
-		size = 0;
-	return (size);
+		return (tail - *head + 1);
+	return (0);
 }
 
 char	*ft_strtrim(char const *s1, char const *set)
